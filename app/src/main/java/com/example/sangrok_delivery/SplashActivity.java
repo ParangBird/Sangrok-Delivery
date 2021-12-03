@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
     private class splashHandler implements Runnable {
         @Override
         public void run() {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));        // LoginActivity 로 이동
+            startActivity(new Intent(getApplicationContext(), SelectRestaurantActivity.class));        // LoginActivity 로 이동
             finish();  // SplashActivity 종료
         }
     }
