@@ -12,6 +12,7 @@
         <activity android:name=".ConfirmDeliverActivity"></activity>
         <activity android:name=".SelectMenuActivity" />
         <activity android:name=".SelectRestaurantActivity" />
+        <activity android:name=".DeliveryActivity"/>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

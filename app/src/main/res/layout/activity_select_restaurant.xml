@@ -26,16 +26,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="590dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
-    </ScrollView>
     <!-- downside toolbar start-->
 
     <TextView
@@ -134,7 +124,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/chatting"
+                android:id="@+id/delivery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
@@ -199,6 +189,17 @@
             android:layout_weight="1" />
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="590dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
     <!-- downside toolbar finish-->
 
 </LinearLayout>
