@@ -13,7 +13,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
+
         android:padding="16dp">
 
         <ImageView
@@ -35,6 +36,7 @@
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/item_image"
             android:layout_toRightOf="@id/item_image"
+            android:layout_marginTop="30dp"
             android:text="TextView 입니다"
             android:textSize="30sp" />
 
@@ -42,9 +44,10 @@
             android:id="@+id/item_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/item_title"
-            android:layout_toEndOf="@+id/item_image"
-            android:layout_toRightOf="@+id/item_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+
             android:text="Detail 입니다." />
 
     </RelativeLayout>

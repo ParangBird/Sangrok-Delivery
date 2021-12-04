@@ -4,18 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".SelectRestaurantActivity">
+    tools:context=".SelectMenuActivity"
+    android:orientation="vertical">
+
 
     <ScrollView
+        android:layout_weight="1"
+        android:id="@+id/ScrollView1"
         android:layout_width="match_parent"
-        android:layout_height="530dp">
-        <androidx.recyclerview.widget.RecyclerView
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:id="@+id/recyclerview_main"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="하이"
+                android:textSize="100sp"
+                ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="700dp"
+            android:text="">
+        </TextView>
+        </LinearLayout>
     </ScrollView>
     <!-- downside toolbar start-->
 
@@ -176,5 +192,7 @@
 
     </LinearLayout>
     <!-- downside toolbar finish-->
+
+
 
 </LinearLayout>
