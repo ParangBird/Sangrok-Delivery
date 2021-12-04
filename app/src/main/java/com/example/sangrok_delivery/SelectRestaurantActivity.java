@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.sangrok_delivery.adapter.RestaurantAdapter;
+import com.example.sangrok_delivery.data.Restaurant;
+
 import java.util.ArrayList;
 
 public class SelectRestaurantActivity extends AppCompatActivity {
@@ -32,20 +35,6 @@ public class SelectRestaurantActivity extends AppCompatActivity {
         restaurants.add(new Restaurant("그루터기", "경영관 지하"));
 
         viewAdapter.setData(restaurants);
-        /*
-        *         recyclerView = findViewById(R.id.recycler_view);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setReverseLayout(true);
-        linearLayoutManager.setStackFromEnd(true);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setFocusable(false);
 
-        postAdapter = new PostAdapter(this);
-        recyclerView.setAdapter(postAdapter);
-        postAdapter.setData(getDataPost());
-
-        *
-        *
-        * */
     }
 }

@@ -1,4 +1,4 @@
-package com.example.sangrok_delivery;
+package com.example.sangrok_delivery.data;
 
 public class Restaurant {
 

@@ -1,4 +1,4 @@
-package com.example.sangrok_delivery;
+package com.example.sangrok_delivery.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,13 +8,17 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.sangrok_delivery.R;
+import com.example.sangrok_delivery.data.Restaurant;
+import com.example.sangrok_delivery.SelectMenuActivity;
+
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.MyViewHolder> {
+public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.MyViewHolder> {
 
     private Context mContext;
 

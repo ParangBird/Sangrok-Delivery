@@ -7,6 +7,34 @@
     tools:context=".SelectMenuActivity"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="530dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recyclerview_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+            <Button
+                android:id="@+id/purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="주문하기"
+                android:textSize="30sp"
+                ></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
 
     <ScrollView
         android:layout_weight="1"
@@ -22,8 +50,8 @@
                 android:id="@+id/restaurant_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="하이"
-                android:textSize="100sp"
+                android:text=""
+                android:textSize="50sp"
                 ></TextView>
         <TextView
             android:layout_width="wrap_content"
