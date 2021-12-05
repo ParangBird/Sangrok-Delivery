@@ -33,10 +33,10 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         protected CardView cardView;
         public MyViewHolder(View itemView) {
             super(itemView);
-             itemImage = itemView.findViewById(R.id.item_image);
-             itemTitle = itemView.findViewById(R.id.item_title);
-             itemDetail = itemView.findViewById(R.id.item_detail);
-             cardView = itemView.findViewById(R.id.card_view);
+            itemImage = itemView.findViewById(R.id.item_image);
+            itemTitle = itemView.findViewById(R.id.item_title);
+            itemDetail = itemView.findViewById(R.id.item_detail);
+            cardView = itemView.findViewById(R.id.card_view);
         }
 
     }
