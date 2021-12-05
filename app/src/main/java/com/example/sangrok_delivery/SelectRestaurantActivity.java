@@ -4,10 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
+import com.example.sangrok_delivery.DeliveryActivity;
 import com.example.sangrok_delivery.adapter.RestaurantAdapter;
 import com.example.sangrok_delivery.data.Restaurant;
+import com.example.sangrok_delivery.slider.CardStackAdapter;
+import com.yuyakaido.android.cardstackview.CardStackLayoutManager;
 
 import java.util.ArrayList;
 
@@ -17,6 +23,8 @@ public class SelectRestaurantActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RestaurantAdapter viewAdapter;
     private RecyclerView.LayoutManager viewManager;
+    private ImageButton delivery;
+    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +44,24 @@ public class SelectRestaurantActivity extends AppCompatActivity {
 
         viewAdapter.setData(restaurants);
 
+
+        // delivery
+        delivery = findViewById(R.id.delivery);
+        delivery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), DeliveryActivity.class);
+                startActivity(intent2);
+            }
+        });
+
+        home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), SelectRestaurantActivity.class);
+                startActivity(intent2);
+            }
+        });
     }
 }

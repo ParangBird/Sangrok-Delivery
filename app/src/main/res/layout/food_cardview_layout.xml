@@ -45,16 +45,16 @@
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/plus_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/plus" />
-        <ImageView
-            android:id="@+id/minus_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/minus"/>
+            <ImageView
+                android:id="@+id/plus_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/plus" />
+            <ImageView
+                android:id="@+id/minus_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/minus"/>
 
             <TextView
                 android:id="@+id/menu_number"
