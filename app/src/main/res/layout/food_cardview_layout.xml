@@ -24,18 +24,20 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="10dp"
             android:text="메뉴"
+            android:textColor="#000000"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/menu_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginRight="40dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
             android:layout_toStartOf="@+id/layout"
-            android:textSize="16sp"
-            android:text="가격" />
+            android:gravity="center"
+            android:text="가격"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
 
         <LinearLayout
@@ -58,10 +60,10 @@
                 android:id="@+id/menu_number"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:textSize="30sp"
                 android:gravity="center"
-                android:text="0">
-            </TextView>
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="30sp"></TextView>
         </LinearLayout>
 
     </RelativeLayout>
