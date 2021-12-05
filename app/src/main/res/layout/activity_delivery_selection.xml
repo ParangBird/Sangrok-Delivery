@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C4C4C4"
-    android:orientation="vertical"
-    tools:context=".SelectRestaurantActivity">
-
+    tools:context=".DeliverySelectionActivity"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="82dp"
@@ -26,25 +25,78 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- downside toolbar start-->
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="518dp">
+        android:layout_height="500dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:background="@color/white">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_main"
+        <ImageView
+            android:id="@+id/profileImageArea"
+            android:src="@drawable/delivery_logo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            />
+        <TextView
+            android:id="@+id/where_selection"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="AA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/destination_selection"
+            android:text="AA"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/menus_selection"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="AA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/endtime_selection"
+            android:text="AA"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/message_selection"
+            android:text="AA"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/approve_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+            android:text="승인" />
+
+    </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:id="@+id/line"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#70000000"
-        android:text="TextView" />
+
+    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/line" android:text="TextView" android:background="#70000000"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -122,12 +174,12 @@
 
         </LinearLayout>
 
-
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -201,5 +253,7 @@
 
     </LinearLayout>
     <!-- downside toolbar finish-->
+
+
 
 </LinearLayout>

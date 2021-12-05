@@ -4,22 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C4C4C4"
     tools:context=".SelectMenuActivity"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#FFFEFE"
+        android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="상록 딜리버리"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+    </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="530dp">
+        android:layout_height="519dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-        <androidx.recyclerview.widget.RecyclerView
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:id="@+id/recyclerview_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:id="@+id/recyclerview_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
 
 
             <Button
@@ -53,12 +70,12 @@
                 android:text=""
                 android:textSize="50sp"
                 ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="700dp"
-            android:text="">
-        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="700dp"
+                android:text="">
+            </TextView>
         </LinearLayout>
     </ScrollView>
     <!-- downside toolbar start-->

@@ -24,6 +24,7 @@ public class SelectRestaurantActivity extends AppCompatActivity {
     private RestaurantAdapter viewAdapter;
     private RecyclerView.LayoutManager viewManager;
     private ImageButton delivery;
+    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,15 @@ public class SelectRestaurantActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(getApplicationContext(), DeliveryActivity.class);
+                startActivity(intent2);
+            }
+        });
+
+        home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), SelectRestaurantActivity.class);
                 startActivity(intent2);
             }
         });
