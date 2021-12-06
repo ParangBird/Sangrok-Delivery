@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.sangrok_delivery.adapter.FoodAdapter;
 import com.example.sangrok_delivery.data.DeliveryInfo;
@@ -31,6 +32,8 @@ public class DeliverySelectionActivity extends AppCompatActivity {
     private TextView menus;
     private TextView message;
 
+    private Button approveButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,15 @@ public class DeliverySelectionActivity extends AppCompatActivity {
         testList.add(new DeliveryInfo("상록원",
                 "주문시간 :2021-12-10 17:50", "조심히와주세요~",
                 "김치철판 외 2개", "배달장소 : 신공학관 3층(알파실)"));
+        testList.add(new DeliveryInfo("상록원",
+                "주문시간 :2021-12-10 17:51", "조심히와주세요~",
+                "김치철판 외 5개", "배달장소 : 신공학관 206"));
+        testList.add(new DeliveryInfo("그루터기",
+                "주문시간 :2021-12-10 17:51", "조심히와주세요~",
+                "김치철판 외 3개", "배달장소 : 혜화관 207-510"));
+        testList.add(new DeliveryInfo("그루터기",
+                "주문시간 :2021-12-10 17:51", "조심히와주세요~",
+                "김치철판 외 4개", "배달장소 : 혜화관 207-510"));
 
         where = findViewById(R.id.where_selection);
         endtime = findViewById(R.id.endtime_selection);
@@ -81,7 +93,16 @@ public class DeliverySelectionActivity extends AppCompatActivity {
             }
         });
 
+        approveButton = findViewById(R.id.approve_button);
+        approveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "배달 라이더 등록이 되었습니다!.",Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
+
 
     public void init() {
 

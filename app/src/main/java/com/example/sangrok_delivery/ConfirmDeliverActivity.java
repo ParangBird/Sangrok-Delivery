@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,8 @@ public class ConfirmDeliverActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager viewManager;
     private TextView price_tv;
     private Button button;
+    private ImageButton delivery;
+    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +80,24 @@ public class ConfirmDeliverActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"주문이 완료되었습니다",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        delivery = findViewById(R.id.delivery);
+        delivery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), DeliveryActivity.class);
+                startActivity(intent2);
+            }
+        });
+
+        home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), SelectRestaurantActivity.class);
+                startActivity(intent2);
             }
         });
     }
