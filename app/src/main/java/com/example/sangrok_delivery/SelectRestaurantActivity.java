@@ -37,10 +37,10 @@ public class SelectRestaurantActivity extends AppCompatActivity {
         recyclerView.setAdapter(viewAdapter);
 
         ArrayList<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant("상록원", "상록원"));
-        restaurants.add(new Restaurant("기숙사식당", "신공학관 1층"));
-        restaurants.add(new Restaurant("가든쿡", "학술문화관 지하 1층"));
-        restaurants.add(new Restaurant("그루터기", "경영관 지하"));
+        restaurants.add(new Restaurant("상록원", "상록원", R.drawable.kimchichulpan));
+        restaurants.add(new Restaurant("기숙사식당", "신공학관 1층", R.drawable.donchippong));
+        restaurants.add(new Restaurant("가든쿡", "학술문화관 지하 1층", R.drawable.rojepasta));
+        restaurants.add(new Restaurant("그루터기", "경영관 지하", R.drawable.groo));
 
         viewAdapter.setData(restaurants);
 

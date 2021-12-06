@@ -1,11 +1,10 @@
 package com.example.sangrok_delivery
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
 import com.example.sangrok_delivery.data.DeliveryInfo
 import com.example.sangrok_delivery.slider.CardStackAdapter
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager
@@ -32,6 +31,10 @@ class DeliveryActivity : AppCompatActivity() {
         testList.add(DeliveryInfo("상록원",
                 "주문시간 :2021-12-10 17:50", "조심히와주세요~",
                 "김치철판 외 2개", "배달장소 : 신공학관 3층(알파실)"));
+        testList.add(DeliveryInfo("상록원",
+                "주문시간 :2021-12-10 17:51", "조심히와주세요~",
+                "김치철판 외 5개", "배달장소 : 신공학관 206"))
+
 
         setContentView(R.layout.activity_delivery)
 
@@ -51,7 +54,7 @@ class DeliveryActivity : AppCompatActivity() {
                     info.putExtra("index", manager.topPosition)
                     startActivity(info)
                 }else{
-                    if(manager.topPosition == 3){
+                    if(manager.topPosition == 4){
                         var info = Intent(this@DeliveryActivity, DeliveryListActivity::class.java)
                         startActivity(info)
                     }

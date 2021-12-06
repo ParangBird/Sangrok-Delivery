@@ -51,7 +51,7 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/delivery_logo"
                     android:clickable="false"/>
 
@@ -64,7 +64,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="test"
+                        android:text="식당 : 기숙사식당"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -72,7 +72,21 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="zzz"
+                        android:text="배달장소 : 원흥관 E259"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴 : 돈치퐁 2개"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시간 : 2021-12-10 17:44"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -83,14 +97,14 @@
             <LinearLayout
                 android:id="@+id/delivery2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="140dp"
                 android:clickable="true"
                 android:orientation="horizontal"
                 >
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/delivery_logo"
                     android:clickable="false"/>
 
@@ -103,7 +117,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="test"
+                        android:text="식당 : 기숙사식당"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -111,7 +125,21 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="zzz"
+                        android:text="배달장소 : 신공학관 3182"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴 : 돈치퐁 외 3개"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시간 : 2021-12-10 17:48"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -128,7 +156,7 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/delivery_logo"
                     android:clickable="false"/>
 
@@ -141,7 +169,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="test"
+                        android:text="식당 : 상록원"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -149,7 +177,21 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="zzz"
+                        android:text="배달장소 : 신공학관 3층(알파실)"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴 : 김치철판 외 2개"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시간 : 2021-12-10 17:49"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -166,7 +208,7 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/delivery_logo"
                     android:clickable="false"/>
 
@@ -179,7 +221,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="test"
+                        android:text="식당 : 상록원"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -187,7 +229,21 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="zzz"
+                        android:text="배달장소 : 신공학관 206"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴 : 김치철판 외 5개"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시간 : 2021-12-10 17:51"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -204,7 +260,7 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/delivery_logo"
                     android:clickable="false"/>
 
@@ -217,7 +273,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="test"
+                        android:text="식당 : 그루터기"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -225,7 +281,21 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="zzz"
+                        android:text="배달장소 : 혜화관 207-510"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴 : 김치철판 외 3개"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시간 : 2021-12-10 17:51"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -242,7 +312,7 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/delivery_logo"
                     android:clickable="false"/>
 
@@ -255,7 +325,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="test"
+                        android:text="식당 : 그루터기"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>
@@ -263,7 +333,21 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="zzz"
+                        android:text="배달장소 : 혜화관 207-510"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴 : 김치철판 외 4개"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:clickable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="시간 : 2021-12-10 17:51"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         android:clickable="false"/>

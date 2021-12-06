@@ -65,7 +65,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
 
-        holder.itemImage.setImageResource(R.drawable.baseline_account_circle_black_24dp);
+        holder.itemImage.setImageResource(restaurants.get(position).getImage_src());
         holder.itemTitle.setText(restaurants.get(position).getName());
         holder.itemDetail.setText(restaurants.get(position).getLocation());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
