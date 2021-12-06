@@ -5,79 +5,214 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#C4C4C4"
     tools:context=".ConfirmDeliverActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#FFFEFE"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="상록 딜리버리"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
     <TextView
-        android:gravity="center"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="주문 내역"></TextView>
-
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="주문 내역"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"></TextView>
 
     <LinearLayout
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="NO"></TextView>
+            android:layout_weight="3"
+            android:background="#DDDDDD"
+            android:gravity="center"
+            android:text="NO"
+            android:textColor="#000000"></TextView>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="메뉴"></TextView>
+            android:layout_weight="3"
+            android:background="#DDDDDD"
+            android:gravity="center"
+            android:text="메뉴"
+            android:textColor="#000000"></TextView>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="수량"></TextView>
+            android:layout_weight="3"
+            android:background="#DDDDDD"
+            android:gravity="center"
+            android:text="수량"
+            android:textColor="#000000"></TextView>
     </LinearLayout>
 
     <ScrollView
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="총액"
-        ></TextView>
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총액"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
         <TextView
             android:id="@+id/total_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="8500원"></TextView>
+            android:layout_marginLeft="15dp"
+            android:text="8500원"
+            android:textColor="#000000"
+            android:textSize="18sp"></TextView>
     </LinearLayout>
 
+    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/line3" android:text="TextView" android:background="#70000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="배달지 선택"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"></TextView>
 
-
-
-    <!-- downside toolbar start-->
-
-    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/line" android:text="TextView" android:background="#70000000"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="건물 선택"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <Spinner
+                android:id="@+id/building"
+                android:layout_width="164dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="3dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="상세 위치"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="건물 내 번호"
+                android:textAlignment="center"
+                android:textColor="#040404" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:gravity="center"
+        android:text="주문 완료"
+        android:textSize="20sp"
+        ></Button>
+    <!-- downside toolbar start-->
+
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/line2" android:text="TextView" android:background="#70000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
         android:background="#FFFFFF"
         android:orientation="horizontal">
 

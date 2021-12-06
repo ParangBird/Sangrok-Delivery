@@ -4,9 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.sangrok_delivery.adapter.ItemAdapter;
 import com.example.sangrok_delivery.adapter.RestaurantAdapter;
@@ -21,6 +27,8 @@ public class ConfirmDeliverActivity extends AppCompatActivity {
     private ItemAdapter viewAdapter;
     private RecyclerView.LayoutManager viewManager;
     private TextView price_tv;
+    private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,5 +62,22 @@ public class ConfirmDeliverActivity extends AppCompatActivity {
         String str = String.valueOf(price) + "원";
         price_tv.setText(str);
 
+        //dropdown list
+        String[] buildings = {"본관","명진관","과학관","다향관","상록원","법학관","만해관","중앙도서관","사회과학관","경영관",
+                "문화관","학술관","혜화관","학림관","계산관","원흥관","신공학관","남산학사","정보문화관","학생회관"};
+
+        Spinner buildingSpinner = findViewById(R.id.building);
+        ArrayAdapter<String> sidoAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,buildings);
+        sidoAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        buildingSpinner.setAdapter(sidoAdapter);
+
+        button = findViewById(R.id.finish);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"주문이 완료되었습니다",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

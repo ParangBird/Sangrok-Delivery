@@ -1,6 +1,7 @@
 package com.example.sangrok_delivery.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,6 +59,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
             holder.no.setText(String.valueOf(position+1));
             holder.menu.setText(list.get(position).getName());
             holder.number.setText(String.valueOf(list.get(position).getNumber()));
+            holder.no.setTextColor(Color.BLACK);
+            holder.number.setTextColor(Color.BLACK);
+            holder.menu.setTextColor(Color.BLACK);
     }
 
     @Override
